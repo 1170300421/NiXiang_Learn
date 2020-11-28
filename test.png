@@ -1,0 +1,68 @@
+
+
+	<body class="home">
+		<div id="container">
+
+			<div id="header">
+
+				<img src="../../dvwa/images/logo.png" alt="Damn Vulnerable Web Application" />
+
+			</div>
+
+			<div id="main_menu">
+
+				<div id="main_menu_padded">
+				<ul class="menuBlocks"><li class=""><a href="../../.">Home</a></li>
+<li class=""><a href="../../instructions.php">Instructions</a></li>
+<li class=""><a href="../../setup.php">Setup / Reset DB</a></li>
+</ul><ul class="menuBlocks"><li class=""><a href="../../vulnerabilities/brute/">Brute Force</a></li>
+<li class=""><a href="../../vulnerabilities/exec/">Command Injection</a></li>
+<li class=""><a href="../../vulnerabilities/csrf/">CSRF</a></li>
+<li class=""><a href="../../vulnerabilities/fi/.?page=include.php">File Inclusion</a></li>
+<li class="selected"><a href="../../vulnerabilities/upload/">File Upload</a></li>
+<li class=""><a href="../../vulnerabilities/captcha/">Insecure CAPTCHA</a></li>
+<li class=""><a href="../../vulnerabilities/sqli/">SQL Injection</a></li>
+<li class=""><a href="../../vulnerabilities/sqli_blind/">SQL Injection (Blind)</a></li>
+<li class=""><a href="../../vulnerabilities/weak_id/">Weak Session IDs</a></li>
+<li class=""><a href="../../vulnerabilities/xss_d/">XSS (DOM)</a></li>
+<li class=""><a href="../../vulnerabilities/xss_r/">XSS (Reflected)</a></li>
+<li class=""><a href="../../vulnerabilities/xss_s/">XSS (Stored)</a></li>
+<li class=""><a href="../../vulnerabilities/csp/">CSP Bypass</a></li>
+<li class=""><a href="../../vulnerabilities/javascript/">JavaScript</a></li>
+</ul><ul class="menuBlocks"><li class=""><a href="../../security.php">DVWA Security</a></li>
+<li class=""><a href="../../phpinfo.php">PHP Info</a></li>
+<li class=""><a href="../../about.php">About</a></li>
+</ul><ul class="menuBlocks"><li class=""><a href="../../logout.php">Logout</a></li>
+</ul>
+				</div>
+
+			</div>
+
+			<div id="main_body">
+
+				
+<div class="body_padded">
+	<h1>Vulnerability: File Upload</h1>
+
+	
+
+	<div class="vulnerable_code_area">
+		<form enctype="multipart/form-data" action="#" method="POST">
+			<input type="hidden" name="MAX_FILE_SIZE" value="100000" />
+			Choose an image to upload:<br /><br />
+			<input name="uploaded" type="file" /><br />
+			<br />
+			<input type="submit" name="Upload" value="Upload" />
+			<input type='hidden' name='user_token' value='f9b15ba9a4c12a825d2c2aa7b3734330' />
+		</form>
+		<pre><a href='../../hackable/uploads/e817bc7ef7c3d20f291f9fbc1ffbb6b4.png'>e817bc7ef7c3d20f291f9fbc1ffbb6b4.png</a> succesfully uploaded!</pre>
+	</div>
+
+	<h2>More Information</h2>
+	<ul>
+		<li><a href="https://www.owasp.org/index.php/Unrestricted_File_Upload" target="_blank">https://www.owasp.org/index.php/Unrestricted_File_Upload</a></li>
+		<li><a href="https://blogs.securiteam.com/index.php/archives/1268" target="_blank">https://blogs.securiteam.com/index.php/archives/1268</a></li>
+		<li><a href="https://www.acunetix.com/websitesecurity/upload-forms-threat/" target="_blank">https://www.acunetix.com/websitesecurity/upload-forms-threat/</a></li>
+	</ul>
+	</body>
+
